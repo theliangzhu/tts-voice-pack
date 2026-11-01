@@ -1,26 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ffd6e7"/><stop offset="55%" stop-color="#ffeef5"/><stop offset="100%" stop-color="#d6ecff"/>
+      <stop offset="0%" stop-color="#cdeaff"/><stop offset="50%" stop-color="#eaf6ff"/><stop offset="100%" stop-color="#ffe6f2"/>
     </linearGradient>
     <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#e0407a"/><stop offset="100%" stop-color="#7a52d1"/>
+      <stop offset="0%" stop-color="#1f7fc4"/><stop offset="100%" stop-color="#c0398a"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
-  <circle cx="150" cy="160" r="78" fill="#fff" opacity="0.75"/>
-  <text x="150" y="188" font-size="76" text-anchor="middle">🐋</text>
-  <text x="270" y="132" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="54" font-weight="700" fill="url(#txt)">waifu-voice</text>
-  <text x="272" y="186" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="27" fill="#6b5b7a">中文少女音色包 · 零样本克隆 · 不用训练</text>
-  <text x="272" y="232" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="21" fill="#8c7a99">一个「唔……你靠这么近」就会心跳的声音</text>
-  <g opacity="0.9">
-    <rect x="272" y="252" width="150" height="34" rx="17" fill="#ffffff" opacity="0.85"/>
-    <text x="347" y="275" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#e0407a">GPT-SoVITS</text>
-    <rect x="434" y="252" width="120" height="34" rx="17" fill="#ffffff" opacity="0.85"/>
-    <text x="494" y="275" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#e0407a">IndexTTS</text>
-    <rect x="566" y="252" width="130" height="34" rx="17" fill="#ffffff" opacity="0.85"/>
-    <text x="631" y="275" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#e0407a">CosyVoice</text>
-    <rect x="708" y="252" width="140" height="34" rx="17" fill="#ffffff" opacity="0.85"/>
-    <text x="778" y="275" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#e0407a">Fish-Speech</text>
+  <rect width="1200" height="300" rx="22" fill="url(#bg)"/>
+  <circle cx="146" cy="150" r="74" fill="#ffffff" opacity="0.8"/>
+  <text x="146" y="178" font-size="72" text-anchor="middle">🐋</text>
+  <text x="258" y="122" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="50" font-weight="700" fill="url(#txt)">tts-voice-pack</text>
+  <text x="260" y="172" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="25" fill="#3d4a5c">中文音色包 · 零样本克隆 · 男女声都能装</text>
+  <text x="260" y="214" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="19" fill="#6b7a8c">第 1 弹：鲸鱼娘——一条住在微信里的大肥鱼</text>
+  <g opacity="0.92">
+    <rect x="260" y="234" width="146" height="32" rx="16" fill="#ffffff" opacity="0.9"/>
+    <text x="333" y="256" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#1f7fc4">GPT-SoVITS</text>
+    <rect x="418" y="234" width="118" height="32" rx="16" fill="#ffffff" opacity="0.9"/>
+    <text x="477" y="256" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#1f7fc4">IndexTTS</text>
+    <rect x="548" y="234" width="126" height="32" rx="16" fill="#ffffff" opacity="0.9"/>
+    <text x="611" y="256" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#1f7fc4">CosyVoice</text>
+    <rect x="686" y="234" width="134" height="32" rx="16" fill="#ffffff" opacity="0.9"/>
+    <text x="753" y="256" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#1f7fc4">Fish-Speech</text>
   </g>
 </svg>

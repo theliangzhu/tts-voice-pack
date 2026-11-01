@@ -1,13 +1,25 @@
 {
   "id": "jingyuniang",
   "name": "鲸鱼娘 / Jingyuniang",
-  "tagline": "一个「唔……你靠这么近」就会心跳的声音",
+  "tagline": "一条住在微信里、会撒娇的大肥鱼",
   "language": "zh-CN",
   "gender": "female",
   "age_impression": "young-adult",
   "timbre": "偏清亮、略带鼻音、尾音软",
-  "style": ["娇羞", "会撒娇", "傲娇", "口语化", "短句", "一口气一行"],
-  "not_good_at": ["播报腔", "广告腔", "说长句", "念稿"],
+  "style": [
+    "娇羞",
+    "会撒娇",
+    "傲娇",
+    "口语化",
+    "短句",
+    "一口气一行"
+  ],
+  "not_good_at": [
+    "播报腔",
+    "广告腔",
+    "说长句",
+    "念稿"
+  ],
   "reference": {
     "file": "ref/ref.wav",
     "transcript": "ref/ref.txt",
@@ -16,12 +28,24 @@
     "duration_sec": 8.32,
     "loudness": "loudnorm I=-16 TP=-1.5 LRA=11"
   },
-  "recommended_models": ["GPT-SoVITS", "IndexTTS", "CosyVoice", "Fish-Speech", "Ming-omni-tts"],
+  "recommended_models": [
+    "GPT-SoVITS",
+    "IndexTTS",
+    "CosyVoice",
+    "Fish-Speech",
+    "Ming-omni-tts"
+  ],
   "example_texts": [
     "别、别看我啦，脸有点烫。",
     "才、才不是想你呢，哼。",
     "你回来啦，我等你好久了。",
     "抱一下嘛，就一下下。"
   ],
-  "use_cases": ["AI 女友", "桌面宠物（大肥鱼）", "游戏 NPC 配音", "Agent 语音播报", "有声小说/语音包"]
+  "use_cases": [
+    "AI 女友",
+    "桌面宠物（大肥鱼）",
+    "游戏 NPC 配音",
+    "Agent 语音播报",
+    "有声小说/语音包"
+  ]
 }
