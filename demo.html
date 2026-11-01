@@ -3,67 +3,76 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>tts-voice-pack · 一键试听</title>
+<title>tts-voice-pack · 鲸鱼娘 试听</title>
 <style>
-  :root{--pink:#e0407a;--purple:#7a52d1;}
+  :root{--blue:#1f7fc4;--pink:#c0398a;}
   *{box-sizing:border-box}
   body{margin:0;min-height:100vh;font-family:-apple-system,"PingFang SC","Noto Sans SC",sans-serif;
-       background:linear-gradient(135deg,#ffd6e7 0%,#ffeef5 55%,#d6ecff 100%);
-       display:flex;align-items:center;justify-content:center;padding:28px;}
-  .card{background:#fff;border-radius:24px;box-shadow:0 18px 50px rgba(150,80,140,.18);max-width:640px;width:100%;padding:30px 30px 24px;}
-  h1{margin:0 0 4px;font-size:26px;background:linear-gradient(90deg,var(--pink),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent;}
-  .sub{color:#8c7a99;font-size:14px;margin-bottom:20px}
-  .big{display:flex;align-items:center;gap:12px;background:linear-gradient(90deg,#fff0f6,#f3edff);border-radius:16px;padding:14px 16px;margin-bottom:18px}
-  .big button{border:0;cursor:pointer;background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;font-size:16px;font-weight:600;border-radius:999px;padding:12px 22px}
-  .big button:active{transform:scale(.97)}
+       background:linear-gradient(135deg,#cdeaff 0%,#eaf6ff 50%,#ffe6f2 100%);
+       display:flex;align-items:flex-start;justify-content:center;padding:24px;}
+  .card{background:#fff;border-radius:24px;box-shadow:0 18px 50px rgba(60,110,160,.18);max-width:680px;width:100%;padding:26px 26px 20px;}
+  h1{margin:0 0 2px;font-size:24px;background:linear-gradient(90deg,var(--blue),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .sub{color:#6b7a8c;font-size:13px;margin-bottom:16px}
+  .hero{background:linear-gradient(90deg,#eaf6ff,#ffeef8);border-radius:16px;padding:14px 16px;margin-bottom:8px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .hero button{border:0;cursor:pointer;background:linear-gradient(135deg,var(--blue),var(--pink));color:#fff;font-size:15px;font-weight:600;border-radius:999px;padding:11px 20px}
+  .hero small{color:#8c9aa8}
+  h2{font-size:14px;color:#3d4a5c;margin:18px 0 6px;letter-spacing:.5px}
   ul{list-style:none;padding:0;margin:0}
-  li{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:14px;transition:.15s}
-  li:hover{background:#fff5f9}
-  li .play{border:0;cursor:pointer;width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;font-size:15px;flex:0 0 auto}
-  li .txt{flex:1;color:#4a3b56;font-size:15px}
-  li .len{color:#b3a4bf;font-size:13px}
-  audio{width:100%;margin-top:16px}
-  footer{margin-top:16px;font-size:12px;color:#b3a4bf;text-align:center}
+  li{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:12px}
+  li:hover{background:#f6fbff}
+  li .play{border:0;cursor:pointer;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--pink));color:#fff;font-size:13px;flex:0 0 auto}
+  li .txt{flex:1;color:#3d4a5c;font-size:14px;line-height:1.35}
+  li .tag{font-size:11px;color:#9aa8b6;flex:0 0 auto}
+  audio{width:100%;margin-top:14px}
+  footer{margin-top:14px;font-size:12px;color:#9aa8b6;text-align:center;line-height:1.6}
 </style>
 </head>
 <body>
 <div class="card">
-  <h1>🐋 tts-voice-pack</h1>
-  <div class="sub">第 1 弹：鲸鱼娘 · 零样本克隆 · 不用训练 · 点一下就能听</div>
-  <div class="big">
-    <button onclick="playAll()">▶ 一键听完 5 条</button>
-    <span style="color:#8c7a99;font-size:13px">约 19 秒</span>
+  <h1>🐋 鲸鱼娘 · tts-voice-pack</h1>
+  <div class="sub">同一个音色，念任何话 —— 不是录好的几句，是能克隆的声音</div>
+
+  <div class="hero">
+    <button onclick="playAll()">▶ 从头连播（26 秒）</button>
+    <small>或点下面任意一句单独听</small>
   </div>
-  <ul id="list"></ul>
-  <audio id="player" controls preload="none"></audio>
-  <footer>参考音频与每句文字严格对齐 · 拿来就能当 TTS 参考</footer>
+
+  <h2>会说任何话（这就是重点）</h2>
+  <ul id="any"></ul>
+
+  <h2>撒娇 / 傲娇</h2>
+  <ul id="cute"></ul>
+
+  <audio id="player" controls preload="auto" src="demo/any-text.mp3"></audio>
+  <footer>GitHub：github.com/theliangzhu/tts-voice-pack<br>参考音频：voices/jingyuniang/ref/ref.wav</footer>
 </div>
 <script>
-const VOICE = 'jingyuniang';
-const CLIPS = [
-  {f:'01.mp3', t:'别、别看我啦，脸有点烫。'},
-  {f:'02.mp3', t:'唔……你靠这么近，我心跳好快。'},
-  {f:'03.mp3', t:'才、才不是想你呢，哼。'},
-  {f:'04.mp3', t:'你回来啦，我等你好久了。'},
-  {f:'05.mp3', t:'抱一下嘛，就一下下。'},
+const base = 'voices/jingyuniang/demo/';
+const ANY = [
+  ['any1.mp3','今天最高气温二十四度，最低十六度，出门记得带件外套。','天气'],
+  ['any2.mp3','一加一等于二，二加二等于四，我算得对不对？','算数'],
+  ['any3.mp3','床前明月光，疑是地上霜。举头望明月，低头思故乡。','念诗'],
+  ['any4.mp3','你好，我是小柒，很高兴认识你，你有什么想说的吗？','自我介绍'],
+  ['any5.mp3','三、二、一，倒计时结束，我们开始吧。','倒计时'],
+  ['any6.mp3','这道菜需要小火慢炖四十分钟，中间记得翻两次面。','菜谱'],
 ];
-const base = `voices/${VOICE}/demo/`;
+const CUTE = [
+  ['01.mp3','别、别看我啦，脸有点烫。','害羞'],
+  ['02.mp3','唔……你靠这么近，我心跳好快。','心跳'],
+  ['03.mp3','才、才不是想你呢，哼。','傲娇'],
+  ['04.mp3','你回来啦，我等你好久了。','等你'],
+  ['05.mp3','抱一下嘛，就一下下。','撒娇'],
+];
 const player = document.getElementById('player');
-const list = document.getElementById('list');
-CLIPS.forEach((c, i) => {
-  const li = document.createElement('li');
-  li.innerHTML = `<button class="play" aria-label="播放">▶</button>
-                  <span class="txt">${c.t}</span>
-                  <span class="len">${i + 1}/5</span>`;
-  li.querySelector('.play').onclick = () => { player.src = base + c.f; player.play(); };
-  list.appendChild(li);
-});
-function playAll(){ player.src = 'demo/all-in-one.mp3'; player.play(); }
-let idx = -1;
-player.addEventListener('play', () => { idx = CLIPS.findIndex(c => player.src.endsWith(c.f)); });
-player.addEventListener('ended', () => {
-  if (idx >= 0 && idx < CLIPS.length - 1) { player.src = base + CLIPS[idx + 1].f; player.play(); }
-});
+function render(el, rows){ rows.forEach(([f,t,tag])=>{
+  const li=document.createElement('li');
+  li.innerHTML=`<button class="play">▶</button><span class="txt">${t}</span><span class="tag">${tag}</span>`;
+  li.querySelector('.play').onclick=()=>{player.src=base+f;player.play();};
+  el.appendChild(li);
+});}
+render(document.getElementById('any'), ANY);
+render(document.getElementById('cute'), CUTE);
+function playAll(){ player.currentTime=0; player.play(); }
 </script>
 </body>
 </html>

@@ -13,20 +13,37 @@
 
 ---
 
-## ▶️ 一键试听（先听，再决定要不要往下读）
+## ▶️ 点开就播（同一音色，什么话都能说）
 
 <p align="center">
-  <a href="https://theliangzhu.github.io/tts-voice-pack/demo.html"><img alt="一键试听" src="https://img.shields.io/badge/%E2%96%B6%20%E6%89%93%E5%BC%80%E8%AF%95%E5%90%AC%E9%A1%B5-1f7fc4?style=for-the-badge"></a>
-  <a href="demo/all-in-one.mp3"><img alt="连播" src="https://img.shields.io/badge/%E2%96%B6%20%E8%BF%9E%E6%92%AD%E7%89%88%2019s-c0398a?style=for-the-badge"></a>
+  <a href="https://theliangzhu.github.io/tts-voice-pack/demo.html"><img alt="试听页" src="https://img.shields.io/badge/%E2%96%B6%20%E7%82%B9%E5%BC%80%E5%B0%B1%E6%92%AD-%E9%B2%B8%E9%B1%BC%E5%A8%98-1f7fc4?style=for-the-badge"></a>
+  <a href="https://theliangzhu.github.io/tts-voice-pack/demo/any-text.mp3"><img alt="直接播" src="https://img.shields.io/badge/%E2%96%B6%20%E7%9B%B4%E6%8E%A5%E6%92%AD%20mp3-c0398a?style=for-the-badge"></a>
 </p>
 
-<p align="center">
-  <b>鲸鱼娘</b>（本库第 1 弹）：<a href="voices/jingyuniang/demo/01.mp3">别、别看我啦</a> ·
-  <a href="voices/jingyuniang/demo/02.mp3">唔…你靠这么近</a> ·
-  <a href="voices/jingyuniang/demo/03.mp3">才不是想你呢</a> ·
-  <a href="voices/jingyuniang/demo/04.mp3">你回来啦</a> ·
-  <a href="voices/jingyuniang/demo/05.mp3">抱一下嘛</a>
-</p>
+<p align="center"><b>先讲清楚这不是"录好的几句"</b>：下面是同一个音色念的<b>不同内容</b>——天气、算数、念诗、自我介绍、倒计时、菜谱。<br>能念这些，就能念你写的任何话。</p>
+
+| 同一音色 · 不同内容 | 试听 |
+|---|---|
+| 今天最高气温二十四度，最低十六度，出门记得带件外套。 | [any1](voices/jingyuniang/demo/any1.mp3) |
+| 一加一等于二，二加二等于四，我算得对不对？ | [any2](voices/jingyuniang/demo/any2.mp3) |
+| 床前明月光，疑是地上霜。举头望明月，低头思故乡。 | [any3](voices/jingyuniang/demo/any3.mp3) |
+| 你好，我是小柒，很高兴认识你，你有什么想说的吗？ | [any4](voices/jingyuniang/demo/any4.mp3) |
+| 三、二、一，倒计时结束，我们开始吧。 | [any5](voices/jingyuniang/demo/any5.mp3) |
+| 这道菜需要小火慢炖四十分钟，中间记得翻两次面。 | [any6](voices/jingyuniang/demo/any6.mp3) |
+
+<details><summary>撒娇 / 傲娇那 5 句（同样是这个音色）</summary>
+
+| 台词 | 试听 |
+|---|---|
+| 别、别看我啦，脸有点烫。 | [01](voices/jingyuniang/demo/01.mp3) |
+| 唔……你靠这么近，我心跳好快。 | [02](voices/jingyuniang/demo/02.mp3) |
+| 才、才不是想你呢，哼。 | [03](voices/jingyuniang/demo/03.mp3) |
+| 你回来啦，我等你好久了。 | [04](voices/jingyuniang/demo/04.mp3) |
+| 抱一下嘛，就一下下。 | [05](voices/jingyuniang/demo/05.mp3) |
+
+</details>
+
+> ⚠️ GitHub 的 README **不能自动播放音频**（浏览器的限制）。想"点一下就有声音"，请点上面那个 **▶ 点开就播**（Pages 页面，进去自动播）。
 
 ---
 
