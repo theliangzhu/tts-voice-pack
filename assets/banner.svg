@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd6e7"/><stop offset="55%" stop-color="#ffeef5"/><stop offset="100%" stop-color="#d6ecff"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0407a"/><stop offset="100%" stop-color="#7a52d1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
+  <circle cx="150" cy="160" r="78" fill="#fff" opacity="0.75"/>
+  <text x="150" y="188" font-size="76" text-anchor="middle">🐋</text>
+  <text x="270" y="132" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="54" font-weight="700" fill="url(#txt)">waifu-voice</text>
+  <text x="272" y="186" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="27" fill="#6b5b7a">中文少女音色包 · 零样本克隆 · 不用训练</text>
+  <text x="272" y="232" font-family="PingFang SC, Noto Sans SC, sans-serif" font-size="21" fill="#8c7a99">一个「唔……你靠这么近」就会心跳的声音</text>
+  <g opacity="0.9">
+    <rect x="272" y="252" width="150" height="34" rx="17" fill="#ffffff" opacity="0.85"/>
+    <text x="347" y="275" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#e0407a">GPT-SoVITS</text>
+    <rect x="434" y="252" width="120" height="34" rx="17" fill="#ffffff" opacity="0.85"/>
+    <text x="494" y="275" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#e0407a">IndexTTS</text>
+    <rect x="566" y="252" width="130" height="34" rx="17" fill="#ffffff" opacity="0.85"/>
+    <text x="631" y="275" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#e0407a">CosyVoice</text>
+    <rect x="708" y="252" width="140" height="34" rx="17" fill="#ffffff" opacity="0.85"/>
+    <text x="778" y="275" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#e0407a">Fish-Speech</text>
+  </g>
+</svg>

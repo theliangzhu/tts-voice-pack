@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-02",
+  "voices": [
+    {
+      "id": "jingyuniang",
+      "name": "鲸鱼娘",
+      "nameEn": "Jingyuniang",
+      "tagline": "一个「唔……你靠这么近」就会心跳的声音",
+      "persona": "娇羞 · 会撒娇 · 傲娇",
+      "language": "zh-CN",
+      "gender": "female",
+      "path": "voices/jingyuniang",
+      "ref": "voices/jingyuniang/ref/ref.wav",
+      "transcript": "voices/jingyuniang/ref/ref.txt",
+      "card": "voices/jingyuniang/voice-card.json",
+      "useCases": ["AI女友", "桌面宠物", "游戏NPC", "Agent播报", "微信机器人"]
+    }
+  ]
+}
